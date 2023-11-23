@@ -41,3 +41,4 @@ addbook.addEventListener("click", function (event) {
 function dell(event) {
   event.target.parentElement.remove();
 }
+
