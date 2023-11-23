@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>MoviesGate</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>The Shawshank Redemption (1994)</h2>
+            <h5>Morgan Freeman</h5>
+            <p>
+                A harrowing tale about the triumph of the human spirit. The story follows a banker named Andy Duphrane who's wrongfully convicted of killing his wife and her lover, and is sent to the Shawshank maximum security prison where he befriends another inmate named Red
+            </p>
+            <button onclick="dell(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+
+
+    <div class="popup-box">
+        <h2>Add Movie</h2>
+        <form>
+            <input type="text" placeholder="Movie Title" id="book-title-input" />
+            <input type="text" placeholder="Cast & Crew" id="book-author-input" />
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="addbook">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
